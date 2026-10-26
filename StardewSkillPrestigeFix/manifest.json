@@ -1,0 +1,21 @@
+{
+    "Name": "Skill Prestige Unofficial Update Emergency Patch",
+    "Author": "OnionNinja",
+    "Version": "1.0.0",
+    "Description": "Temporary fix for Skill Prestige Unofficial with Sword & Sorcery",
+    "UpdateKeys": [],
+    "UniqueID": "OnionNinja.SPSnSFix",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "DN.SnS",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "CinderGarde.SpaceCoreSkillAdapter",
+            "IsRequired": true
+        }
+    ]
+}

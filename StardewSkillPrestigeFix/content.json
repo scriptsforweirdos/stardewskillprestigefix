@@ -1,0 +1,20 @@
+{
+	"Format": "2.9.0",
+	"Changes": [
+		{
+			"LogName": "Remove Teleport Circle Recipe if Witchcraft Skill level less than 4",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}_RemoveTeleportCircle": {
+					"Id": "{{ModId}}_RemoveTeleportCircle",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_DESTYNOVA.SWORDANDSORCERY.WITCHCRAFT_LEVEL Current 0 3, PLAYER_HAS_CRAFTING_RECIPE Current DN.SnS_TeleportCircle",
+					"Actions": [
+						"MarkCraftingRecipeKnown Current DN.SnS_TeleportCircle false"
+					]
+				}
+			}
+		}
+	]
+}
