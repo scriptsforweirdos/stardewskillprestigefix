@@ -6,13 +6,14 @@
 			"Action": "EditData",
 			"Target": "Data/TriggerActions",
 			"Entries": {
-				"{{ModId}}_RemoveTeleportCircle": {
-					"Id": "{{ModId}}_RemoveTeleportCircle",
-					"Trigger": "DayEnding",
+				"{{ModId}}_RemoveTeleportCircleDayStart": {
+					"Id": "{{ModId}}_RemoveTeleportCircleDayStart",
+					"Trigger": "DayStarted DayEnding",
 					"Condition": "PLAYER_DESTYNOVA.SWORDANDSORCERY.WITCHCRAFT_LEVEL Current 0 3, PLAYER_HAS_CRAFTING_RECIPE Current DN.SnS_TeleportCircle",
 					"Actions": [
 						"MarkCraftingRecipeKnown Current DN.SnS_TeleportCircle false"
-					]
+					],
+                    "MarkActionApplied": false
 				}
 			}
 		}
